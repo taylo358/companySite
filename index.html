@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<!--Auto resize to fit devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--Bootstrap CDN-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<!--JQuery CDN-->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+<!--CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+<!--Link function.js file-->
+    <script src="function.js"></script>
+    
+</head>
+    
+    <body>
+<!--Blue nav bar at top of page-->
+    <div class="topnav" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+        
+<!--Pic Slideshow-->
+        <div>
+        <img class="mySlides" src="office1.jpg" style="width:80%;height:400px;">
+        <img class="mySlides" src="office2.jpg" style="width:80%;height:400px;">
+        <img class="mySlides" src="office3.jpg" style="width:80%;height:400px;">
+        </div>
+        
+<!--Javascript for slideshow functionality-->
+<script>
+    
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+        
+<br>
+
+
+        
+<!--Black background div-->
+        <div style="display:block;" class="blackbg" >
+            <h3 align="center">Our Company</h3>
+            <p class="par1"> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor nulla, venenatis nec consequat non, gravida eu arcu. Integer vestibulum ligula rhoncus velit laoreet aliquet. Morbi iaculis, tellus sit amet tristique feugiat, mi nulla consequat est, in tincidunt lorem sem et ex. Aliquam tellus sapien, semper id sem quis, tincidunt congue nisi. Fusce ligula lacus, volutpat nec vulputate quis, aliquet at turpis. Fusce sollicitudin ante nisi, ac gravida quam facilisis pretium. Suspendisse a arcu et sapien lobortis ultrices. Praesent ligula urna, dictum pulvinar lacus et, tempus placerat dui. In semper ultricies maximus. Phasellus eget tempus augue, sit amet aliquet nunc. Mauris ut convallis quam, et vestibulum justo.Suspendisse laoreet lacus at bibendum tincidunt. Etiam tristique vulputate nisi. Nulla semper massa ut magna porttitor, eget tempor dui mattis. <br>Mauris ullamcorper erat quis interdum tincidunt. Vivamus ac enim a risus viverra semper. Curabitur tempor, ipsum sit amet vulputate aliquam, nisl arcu commodo neque, vel dapibus lectus turpis vel odio. Sed eu lacus porta, egestas metus eu, interdum sem. Integer pharetra sed enim ut pharetra. Ut et nulla bibendum, ullamcorper massa sed, feugiat metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit nisl eget dapibus volutpat. Sed nec justo convallis, scelerisque lorem sit amet, pharetra enim. Proin id convallis neque. Integer mi urna, laoreet vel sem et, pellentesque feugiat libero. Nam et sagittis orci, feugiat commodo ex. Morbi porta, tortor at facilisis porttitor, lacus mi tempus nisl, sit amet venenatis justo nunc sit amet velit.
+            </p>
+        </div>
+        
+<!--Blue background div-->
+        <div style="display:block;" class="bluebg" >
+            <p>The Company</p>
+            <p>765-555-5555</p>
+            <p>designer@thecompany.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97221.43128161844!2d-86.9282565384804!3d40.405090641692894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8813001a192aeaad%3A0xa541eddbe84f1ef5!2sLafayette%2C+IN!5e0!3m2!1sen!2sus!4v1494093433275" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>   
+        
+    </body>
+
+</html>
