@@ -36,6 +36,16 @@
     height: 500px;
     width: 100%;
 }
+.whitebg{
+    background-color:white;
+    height: 450px;
+    width:100%;
+}
+.whitebg2{
+    background-color:white;
+    height: 20px;
+    width:100%;
+}
 h3{
     color:white;
 }
@@ -46,10 +56,18 @@ p{
     padding-left: 40px;
     padding-right: 40px;
 }
+p.btext{
+    color:black;
+    font-family:fantasy;
+}
 body{
     background-color: black;
 }
 img {
     display: block;
     margin: 0 auto;
+}
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
