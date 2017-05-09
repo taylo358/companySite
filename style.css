@@ -28,22 +28,22 @@
 }
 .blackbg{
     background-color:black;
-    height: 400px;
+    height: auto;
     width:100%;
 }
 .bluebg{
     background-color:#4F6CBA;
-    height: 500px;
+    height: auto;
     width: 100%;
 }
 .whitebg{
     background-color:white;
-    height: 450px;
+    height: auto;
     width:100%;
 }
 .whitebg2{
     background-color:white;
-    height: 20px;
+    height: auto;
     width:100%;
 }
 h3{
@@ -71,3 +71,4 @@ h2{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
