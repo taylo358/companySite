@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #4F6CBA;
+    background-color: #2980b9;
     overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
     width:100%;
 }
 .bluebg{
-    background-color:#4F6CBA;
+    background-color:#2980b9;
     height: auto;
     width: 100%;
 }
